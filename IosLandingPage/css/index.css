@@ -218,6 +218,15 @@ li
 
 /* ------------ ------------ ------------ ------------ */
 /* --Section 3 Nội Dung-- ------------ */
+.imageNoiDung
+  {
+    margin-right: -20px;
+    width: 58rem;
+  }
+.imageNoiDung img
+  {
+    width: 100%;
+  }
 .collapsible 
   {
     padding: 1.2rem 2rem;

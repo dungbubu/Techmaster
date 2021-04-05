@@ -50,6 +50,11 @@
 
     /* ------------ ------------ ------------ ------------ */
     /* --Section 3 Nội Dung-- ------------ */
+    .imageNoiDung
+      {
+        margin-right: 0px;
+        width: calc(100% - 28rem);
+      }
     .listContent 
       {
         padding: 0;

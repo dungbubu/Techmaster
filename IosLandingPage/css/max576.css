@@ -66,6 +66,18 @@
 
     /* ------------ ------------ ------------ ------------ */
     /* --Section 3 Nội Dung-- ------------ */
+    .imageNoiDung
+      {
+        display: none;
+      }
+    .iconPlus
+      {
+        display: none;
+      }
+    .collapsible.active .iconHide
+      {
+        display: none;
+      }
 
     /* ------------ ------------ ------------ ------------ */
     /* --Section 4 Giáo Trình-- ------------ */
