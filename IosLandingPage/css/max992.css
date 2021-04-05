@@ -1,0 +1,194 @@
+@media (max-width: 992px)
+  {
+    /* ------------ ------------ ------------ ------------ */
+    /* --Style Guide-- ------------ */
+    .content
+      {
+        width: 34rem;
+      }
+
+    /* ------------ ------------ ------------ ------------ */
+    /* --Background Decor-- ------------ */
+    .bgdecor1, .bgdecor2
+      {
+        height: 3.2rem;
+      }
+
+    /* ------------ ------------ ------------ ------------ */
+    /* --Navbar-- ------------ */
+    .menuItem
+      {
+        display: none;
+      }
+
+    /* ------------ ------------ ------------ ------------ */
+    /* --Burger Menu-- ------------ */
+    .burger-menu
+      {
+        display: flex;
+      }
+
+    /* ------------ ------------ ------------ ------------ */
+    /* --Main-- ------------ */
+    .mainLandingPage
+      {
+        height: 42rem;
+      }
+    .imageLandingPage
+      {
+        margin-right: -40px;
+        width: 32rem;
+      }
+
+    /* ------------ ------------ ------------ ------------ */
+    /* --Section 1 Giới Thiệu-- ------------ */
+    .imageGioiThieu
+      {
+        margin-right: -60px;
+        width: 34rem;
+      }
+    .boxGioiThieu
+      {
+        padding: 0.2rem;
+        width: calc(24rem - 0.4rem);
+        height: 20rem;
+      }
+
+    /* ------------ ------------ ------------ ------------ */
+    /* --Section 2 Giảng Viên-- ------------ */
+    .cardGiangVien
+      {
+        margin: 0 2.4rem 2rem 0;
+        padding: 2rem 1.6rem 4rem 1.6rem;
+        width: 34rem;
+      }
+    .carouselGiangVien .slick-dots
+      {
+        width: 64rem; /* Bằng container */
+      }
+    .cardGiangVien .cardAva
+      {
+        width: 8rem;
+        height: 8rem;
+      }
+
+    /* ------------ ------------ ------------ ------------ */
+    /* --Section 3 Nội Dung-- ------------ */
+
+    /* ------------ ------------ ------------ ------------ */
+    /* --Section 4 Giáo Trình-- ------------ */
+    .imageGiaoTrinh
+      {
+        margin-right: -60px;
+        width: 34rem;
+      }
+
+    /* ------------ ------------ ------------ ------------ */
+    /* --Section 5 Điều Kiện Học-- ------------ */
+    .cardYeuCau
+      {
+        padding: 1.2rem;
+        width: calc(100% - 2.4rem);
+        align-items: flex-start;
+      }
+    .cardYeuCau .cardIcon
+      {
+        margin-right: 1.2rem;
+        width: 6rem;
+      }
+    .imageYeuCau
+      {
+        margin-top: -60px;
+        margin-right: -20px;
+        width: 32rem;
+      }
+    .boxYeuCau
+      {
+        padding: 0.2rem;
+        width: calc(28rem - 0.4rem);
+        height: 38rem;
+        top: 10px;
+        left: 20px;
+      }
+    .boxYeuCau2 li
+      {
+        margin: 0 1.2rem 0 2.2rem;
+      }
+    .boxYeuCauDecor
+      {
+        height: 8rem;
+      }
+
+    /* ------------ ------------ ------------ ------------ */
+    /* --Section 6 Feedback Của Học Viên-- ------------ */
+    .cardFeedback picture img
+      {
+        width: 30rem;
+      }
+
+    /* ------------ ------------ ------------ ------------ */
+    /* --Section 7 Liên Hệ-- ------------ */
+    .cardLienHe
+      {
+        padding: 1.2rem;
+        width: calc(100% - 2.4rem);
+      }
+    .cardLienHe img
+      {
+        margin-right: 1.2rem;
+        width: 2.8rem;
+        height: 2.8rem;
+      }
+    .boxLienHe
+      {
+        padding: 1.2rem;
+        width: calc(28rem - 2.4rem);
+        height: 40rem;
+      }
+    .inputText
+      {
+        padding: 1rem;
+        width: calc(100% - 2rem - 2px);
+      }
+    textarea
+      {
+        height: 12rem;
+      }
+
+    /* ------------ ------------ ------------ ------------ */
+    /* --Map-- ------------ */
+    iframe
+      {
+        height: 30rem;
+      }
+
+    /* ------------ ------------ ------------ ------------ */
+    /* --Section 8 Blog Công Nghệ-- ------------ */
+    .cardBlog
+      {
+        margin: 3rem 2rem;
+        padding: 0 0 2rem 0;
+        width: 30rem;
+      }
+    .cardBlog .cardThumbnail
+      {
+        height: 15.2rem;
+      }
+    .cardBlog .cardDate img
+      {
+        width: 2rem;
+        height: 2rem;
+      }
+
+    /* ------------ ------------ ------------ ------------ */
+    /* --Footer-- ------------ */
+    .footerNavbarBg
+      {
+        padding: 4rem 0;
+      }
+    .grid-container
+      {
+        grid-gap: 2rem;
+        grid-template-columns: 30rem 30rem;
+      }
+  }

@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Lập trình IOS</title>
+    <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
+
+    <!-- CSS Chung - Slick -->
+    <link rel="stylesheet" href="../lib/Slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="../lib/Slick-1.8.1/slick/slick-theme.css">
+    <!-- CSS Chung -->
+    <link rel="stylesheet" href="../css/styleGuide.css">
+    <!-- Burger Menu -->
+    <link rel="stylesheet" href="../css/burger-menu.css">
+    <!-- CSS Riêng -->
+    <link rel="stylesheet" href="../css/index.css">
+
+    <!-- Responsive max 1200px -->
+    <link rel="stylesheet" href="../css/max1200.css">
+    <!-- Responsive max 992px -->
+    <link rel="stylesheet" href="../css/max992.css">
+    <!-- Responsive max 768px -->
+    <link rel="stylesheet" href="../css/max768.css">
+    <!-- Responsive max 576px -->
+    <link rel="stylesheet" href="../css/max576.css">
+    <!-- Responsive max 320px -->
+    <link rel="stylesheet" href="../css/max320.css">
+  </head>
+
+
+
+
+  <!-- //////////// //////////// //////////// //////////// //////////// //////////// -->
+  <!-- //////////// //////////// Lập trình IOS-Tech Master //////////// //////////// -->
+  <!-- //////////// //////////// //////////// //////////// //////////// //////////// -->
+
+
+
+
+  <body>
+    <!-- Navbar -->
+    <header class="navbarBg">
+      <div class="container navbar">
+        <a href="./index.html" class="logo">
+          <picture>
+            <img src="../images/logo.png" alt="Techmaster">
+          </picture>
+        </a>
+
+        <div class="menuItem header header-16-22">
+          <a class="itemMenu" href="#idTrangChu">Trang chủ<div class="menuDecor"></div></a>
+          <a class="itemMenu" href="#idGioiThieu">Giới thiệu<div class="menuDecor"></div></a>
+          <a class="itemMenu" href="#idGiangVien">Giảng viên<div class="menuDecor"></div></a>
+          <a class="itemMenu" href="#idNoiDung">Nội dung<div class="menuDecor"></div></a>
+          <a class="itemMenu" href="#idHocVien">Học viên<div class="menuDecor"></div></a>
+          <a class="itemMenu" href="#idLienHe">Liên hệ<div class="menuDecor"></div></a>
+          <a class="itemMenu" href="#idBaiViet">Bài viết<div class="menuDecor"></div></a>
+        </div>
+
+        <div class="burger-menu" onclick="hamburgerFunction()">
+          <div class="line-1"></div>
+          <div class="line-2"></div>
+          <div class="line-3"></div>
+        </div>
+      </div>
+    </header>
+
+
+    <!-- Burger Menu -->
+    <section>
+      <div class="burger-menu-blackscreen" onclick="hamburgerFunction()"></div>
+      <div class="burger-menu-content">
+        <div class="container">
+          <div class="break-120"></div>
+          <a class="burger-filling header header-16-22 txcl-primary" href="#idTrangChu"><span>></span> Trang chủ</a>
+          <hr>
+          <a class="burger-filling header header-16-22 txcl-primary" href="#idGioiThieu"><span>></span> Giới thiệu</a>
+          <hr>
+          <a class="burger-filling header header-16-22 txcl-primary" href="#idGiangVien"><span>></span> Giảng viên</a>
+          <hr>
+          <a class="burger-filling header header-16-22 txcl-primary" href="#idNoiDung"><span>></span> Nội dung</a>
+          <hr>
+          <a class="burger-filling header header-16-22 txcl-primary" href="#idHocVien"><span>></span> Học viên</a>
+          <hr>
+          <a class="burger-filling header header-16-22 txcl-primary" href="#idLienHe"><span>></span> Liên hệ</a>
+          <hr>
+          <a class="burger-filling header header-16-22 txcl-primary" href="#idBaiViet"><span>></span> Bài viết</a>
+          <hr>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Main -->
+    <main class="container-fluid bgcl-primary" id="idTrangChu">
+      <div class="container layout1x1 mainLandingPage">
+        <div class="content">
+          <div>
+            <p class="header header-48-52 txcl-secondary2">Lập trình</p>
+            <p class="header header-160-120 txcl-white">IOS</p>
+          </div>
+          <div class="break-20"></div>
+          <p class="txcl-white">Xây dựng và phát triển ứng dụng tương thích với hệ 
+            điều hành IOS thông qua ngôn ngữ lập trình Swift 
+            được sáng tạo độc quyền bởi Apple.</p>
+          <div class="break-40"></div>
+          <div>
+            <a href="#idNoiDung" style="display: inline;"><button class="btn btn-cta header header-20-28 txcl-white">Tài liệu khóa học</button></a>
+            <a href="#idLienHe" style="display: inline;"><button class="btn btn-secondary header header-20-28 txcl-primary">Liên hệ</button></a>
+          </div>
+        </div>
+
+        <div class="imageLandingPage">
+          <picture>
+            <img src="../images/mainLandingPage/iphoneMockup.png" alt="Techmaster class">
+          </picture>
+        </div>
+      </div>
+    </main>
+
+
+    <!-- Background Decor -->
+    <div class="bgdecor1"></div>
+
+
+    <!-- Section 1 Giới Thiệu -->
+    <section class="container" id="idGioiThieu">
+      <div class="break-80"></div>
+
+      <div class="layout1x1">
+        <div class="content">
+          <p class="header header-48-52 txcl-primary">GIỚI THIỆU</p>
+          <div class="break-12"></div>
+          <div class="decor"></div>
+          <div class="break-12"></div>
+          <p>Techmaster thành lập năm 2011, là trung tâm đầu tiên 
+              tại Hà Nội đào tạo lập trình di động iOS.</p>
+  
+          <div class="break-40"></div>
+  
+          <ul>
+            <li>Chỉ tính từ năm 2019, các doanh nghiệp đã hợp tác 
+                với Techmaster đào tạo nhân lực iOS: VinID, 
+                Mobiphone, Brother Việt Nam, OMG, ...</li>
+            <li>Một số công ty có học viên Techmaster đến thực tập 
+                và đi làm: VinID, Top Rate, Mobiphone, VTI, FDS, ...</li>
+          </ul>
+        </div>
+  
+        <div class="imageGioiThieu">
+          <picture>
+            <source srcset="../images/sectionGioiThieu/gioiThieu.webp" type="image/webp">
+            <source srcset="../images/sectionGioiThieu/gioiThieu.png" type="image/png">
+            <img src="../images/sectionGioiThieu/gioiThieu.png" alt="Giới thiệu về Techmaster">
+          </picture>
+          <div class="boxGioiThieu">
+            <div class="boxGioiThieu2">
+              <p class="header header-94-80 txcl-secondary">500<span class="header-62-80"></span>+</p>
+              <p class="header header-48-52 txcl-primary">HỌC VIÊN</p>
+              <p>Đã tốt nghiệp và tìm được việc làm phù hợp</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Section 2 Giảng Viên -->
+    <section id="idGiangVien">
+      <div class="break-120"></div>
+
+      <div class="container">
+        <div class="content">
+          <p class="header header-48-52 txcl-primary">GIẢNG VIÊN</p>
+          <div class="break-12"></div>
+          <div class="decor"></div>
+          <div class="break-12"></div>
+          <p>Đội ngũ giảng viên giàu kinh nghiệm sư phạm, tỉ mỉ, 
+             tận tâm, trách nhiệm trong công tác giảng dạy.</p>
+        </div>
+      </div>
+
+      <div class="break-60"></div>
+
+      <div class="container-fix carouselGiangVien">
+        <div class="cardGiangVien">
+          <div class="cardAva">
+            <picture>
+              <source srcset="../images/sectionGiangVien/gvCuong.webp" type="image/webp">
+              <source srcset="../images/sectionGiangVien/gvCuong.jpg" type="image/jpg">
+              <img src="../images/sectionGiangVien/gvCuong.jpg" alt="Thầy Trịnh Minh Cường">
+            </picture>
+          </div>
+          <div class="break-12"></div>
+          <p class="header header-24-30 txcl-primary">Trịnh Minh Cường</p>
+          <div class="break-24"></div>
+          <ul>
+            <li>Trên 22 năm kinh nghiệm, Microsoft 
+                Technology Evangelist, làm hơn 60 dự án phần 
+                mềm trong và ngoài nước.</li>
+            <li>Giảng viên khóa học : IOS, Golang, Docker, 
+                Python, C++, Node.js, Linux.</li>
+            <li>Đã từng làm việc tại Microsoft Vietnam, HarveyNash Vietnam, 
+                Fujitsu Vietnam, Trivision 
+                và Pacific R.I.M.</li>
+          </ul>
+        </div>
+
+        <div class="cardGiangVien">
+          <div class="cardAva">
+            <picture>
+              <source srcset="../images/sectionGiangVien/gvQuynh.webp" type="image/webp">
+              <source srcset="../images/sectionGiangVien/gvQuynh.jpg" type="image/jpg">
+              <img src="../images/sectionGiangVien/gvQuynh.jpg" alt="Cô Tào Thuý Quỳnh">
+            </picture>
+          </div>
+          <div class="break-12"></div>
+          <p class="header header-24-30 txcl-primary">Tào Thuý Quỳnh</p>
+          <div class="break-24"></div>
+          <ul>
+            <li>Học tại Học viện Kỹ thuật mật mã.</li>
+            <li>Có kinh nghiệm 3 năm giảng dạy lập trình 
+                di động iOS, React Native.</li>
+            <li>Có kinh nghiệm giảng dạy cho các lớp doanh nghiệp.</li>
+            <li>Có một số project app theo yêu cầu.</li>
+          </ul>
+        </div>
+
+        <div class="cardGiangVien">
+          <div class="cardAva">
+            <picture>
+              <source srcset="../images/sectionGiangVien/gvDuc.webp" type="image/webp">
+              <source srcset="../images/sectionGiangVien/gvDuc.jpg" type="image/jpg">
+              <img src="../images/sectionGiangVien/gvDuc.jpg" alt="Thầy Lê Đình Đức">
+            </picture>
+          </div>
+          <div class="break-12"></div>
+          <p class="header header-24-30 txcl-primary">Lê Đình Đức</p>
+          <div class="break-24"></div>
+          <ul>
+            <li>Lập trình viên iOS team Zalo tập đoàn VNG.</li>
+            <li>Tham gia nhiều dự án trong và ngoài nước.</li>
+            <li>Giảng viên khóa học iOS tại Techmaster.</li>
+          </ul>
+        </div>
+
+        <div class="cardGiangVien">
+          <div class="cardAva">
+            <picture>
+              <source srcset="../images/sectionGiangVien/gvViet.webp" type="image/webp">
+              <source srcset="../images/sectionGiangVien/gvViet.jpg" type="image/jpg">
+              <img src="../images/sectionGiangVien/gvViet.jpg" alt="Thầy Lê Văn Việt">
+            </picture>
+          </div>
+          <div class="break-12"></div>
+          <p class="header header-24-30 txcl-primary">Lê Văn Việt</p>
+          <div class="break-24"></div>
+          <ul>
+            <li>Trên 5 năm kinh nghiệm lập trình iOS, quản lý dự án.</li>
+            <li>Quản lý nhiều dự án phần mềm.</li>
+            <li>Trưởng phòng Development tại công ty Cổ phần Solar Việt Nam.</li>
+          </ul>
+        </div>
+
+        <div class="cardGiangVien">
+          <div class="cardAva">
+            <picture>
+              <source srcset="../images/sectionGiangVien/gvHieu.webp" type="image/webp">
+              <source srcset="../images/sectionGiangVien/gvHieu.jpg" type="image/jpg">
+              <img src="../images/sectionGiangVien/gvHieu.jpg" alt="Thầy Tào Quang Hiếu">
+            </picture>
+          </div>
+          <div class="break-12"></div>
+          <p class="header header-24-30 txcl-primary">Tào Quang Hiếu</p>
+          <div class="break-24"></div>
+          <ul>
+            <li>Trên 6 năm kinh nghiệm về lập trình viên
+                di động tại Công ty CP Bentic Việt Nam.</li>
+            <li>Hoàn thành và bàn giao hơn 10 dự án về
+                iOS và Flutter (cá nhân thực hiện).</li>
+            <li>Giảng viên khóa học: iOS, Flutter.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Section 3 Nội Dung -->
+    <section class="container" id="idNoiDung">
+      <div class="break-120"></div>
+
+      <div class="content">
+        <p class="header header-48-52 txcl-primary">NỘI DUNG</p>
+        <div class="break-12"></div>
+        <div class="decor"></div>
+        <div class="break-12"></div>
+        <p>Khoá học iOS 18 buổi,  80% thời gian  thực hành, có 
+           giáo trình online đi kèm để bổ trợ kiến thức, 
+           kết thúc khoá học có bảo vệ đồ án.</p>
+      </div>
+
+      <div class="break-20"></div>
+      <button type="button" class="collapsible">
+        <span class="header header-24-30">Môn học: Swift + IOS căn bản</span>
+        <span class="iconPlus header header-32-36">+</span>
+        <span class="iconHide header header-32-36">--</span>
+      </button>
+      <div class="listContent">
+        <div class="break-20"></div>
+        <ul><span class="header header-24-30 txcl-primary">Buổi 1:</span> Giới thiệu IOS, cơ hội nghề nghiệp, Xcode và làm quen ngôn ngữ Swift
+          <li>Giới thiệu hệ điều hành IOS</li>
+          <li>Các thiết bị sử dụng hệ điều hành IOS</li>
+          <li>Các công cụ cần thiết để lập trình IOS</li>
+          <li>Cài đặt và làm quen các chức năng của XCode</li>
+          <li>Giới thiệu Swift 5</li>
+          <li>So sánh Swift với Objective-C</li>
+          <li>In ra màn hình Console</li>
+          <li>Các quy tắc khi code với Swift</li>
+          <li>Khai báo biến với let, var</li>
+          <li>Thống nhất quy tắc đặt tên biến</li>
+          <li>Các kiểu dữ liệu cơ bản</li>
+          <li>Toán tử số học</li>
+          <li>String, Character và các hàm xử lý</li>
+        </ul>
+
+        <div class="break-20"></div>
+        <ul><span class="header header-24-30 txcl-primary">Buổi 2:</span> Hàm, câu điều kiện và vòng lặp
+          <li>Định nghĩa và gọi function</li>
+          <li>Tham số inout</li>
+          <li>Câu điều kiện if ... else</li>
+          <li>Câu điều kiện switch...case</li>
+          <li>Vòng lặp for</li>
+          <li>Vòng  while, repeat while</li>
+        </ul>
+
+        <div class="break-20"></div>
+        <ul><span class="header header-24-30 txcl-primary">Buổi 3:</span> Làm việc với github
+          <li>Tạo tài khoản github và cài đặt git</li>
+          <li>Tạo repository trên máy và trên github</li>
+          <li>Remote git repo</li>
+          <li>Create, check out branch</li>
+          <li>Commit, push, pull, merge</li>
+        </ul>
+
+        <div class="break-20"></div>
+        <ul><span class="header header-24-30 txcl-primary">Buổi 4:</span> Collection types
+          <li>Dictionary</li>
+          <li>Enum</li>
+          <li>Set</li>
+          <li>Array</li>
+          <li>Kiểu dữ liệu Tuples</li>
+        </ul>
+
+        <div class="break-20"></div>
+        <ul><span class="header header-24-30 txcl-primary">Buổi 5:</span> Optional và closure
+          <li>Optional là gì</li>
+          <li>Phân biệt ? và !</li>
+          <li>Unwrap một đối tượng optional</li>
+          <li>Closure là gì</li>
+          <li>Closure truyền trong hàm</li>
+          <li>Closure gán cho biến</li>
+        </ul>
+
+        <div class="break-20"></div>
+        <ul><span class="header header-24-30 txcl-primary">Buổi 6:</span> Struct và class
+          <li>Định nghĩa struct và class</li>
+          <li>Khởi tạo class và struct</li>
+          <li>Kiểu tham chiếu và kiểu tham trị</li>
+          <li>So sánh giống và khác nhau giữa class và struct</li>
+        </ul>
+
+        <div class="break-20"></div>
+        <ul><span class="header header-24-30 txcl-primary">Buổi 7:</span> Kiểm tra logic</ul>
+
+        <div class="break-20"></div>
+        <ul><span class="header header-24-30 txcl-primary">Buổi 8:</span> Ứng dụng đầu tiên
+          <li>Giới thiệu cấu trúc project</li>
+          <li>Storyboard</li>
+          <li>UIView</li>
+          <li>Các thuộc tính cơ bản trong inspector</li>
+          <li>Run ứng dụnng trên simulator</li>
+          <li>Kết nối thiết bị iOS</li>
+        </ul>
+
+        <div class="break-20"></div>
+        <ul><span class="header header-24-30 txcl-primary">Buổi 9:</span> Ứng dụng bật tắt đèn
+          <li>Assets</li>
+          <li>Ánh xạ outlet @IBOutlet</li>
+          <li>Ánh xạ action @IBAction</li>
+          <li>Thay đổi các thuộc tính bằng code</li>
+        </ul>
+
+        <div class="break-20"></div>
+        <ul><span class="header header-24-30 txcl-primary">Buổi 10:</span> Ứng dụng BMI
+          <li>Ôn tập các controls UIView, UIIMageView, UIButton</li>
+          <li>UISlider</li>
+          <li>Gesture Recognizer</li>
+        </ul>
+
+        <div class="break-20"></div>
+        <ul><span class="header header-24-30 txcl-primary">Buổi 11:</span> Ứng dụng đồng hồ
+          <li>Kiểu dữ liệu Timer</li>
+          <li>Layer</li>
+          <li>Animation</li>
+        </ul>
+
+        <div class="break-20"></div>
+        <ul><span class="header header-24-30 txcl-primary">Buổi 12:</span> Kiểm tra ứng dụng</ul>
+      </div>
+
+      <div class="break-20"></div>
+      <button type="button" class="collapsible">
+        <span class="header header-24-30">Môn học: Lập trình IOS chuyên nghiệp</span>
+        <span class="iconPlus header header-32-36">+</span>
+        <span class="iconHide header header-32-36">--</span>
+      </button>
+      <div class="listContent">
+        <div class="break-20"></div>
+        <ul><span class="header header-24-30 txcl-primary">Buổi 1:</span> Ôn tập ngôn ngữ Swift và kỹ thuật lập trình UIKit
+          <li>Struct & Class</li>
+          <li>Optional</li>
+          <li>Closure</li>
+          <li>Các thao tác làm việc với mảng, dictionary, enum, set</li>
+        </ul>
+        
+        <div class="break-20"></div>
+        <ul><span class="header header-24-30 txcl-primary">Buổi 2 + 3:</span> Auto Layout
+          <li>Giới thiệu về hệ thống Auto Layout trong lập trình iOS</li>
+          <li>Auto Layout với giao diện</li>
+          <li>Auto Layout với  chay</li>
+          <li>Layout với Stack, priority</li>
+        </ul>
+        
+        <div class="break-20"></div>
+        <ul><span class="header header-24-30 txcl-primary">Buổi 3 + 4:</span> Controls (tiếp)
+          <li>UIPickerView, UIDatePicker</li>
+          <li>Ứng dụng đếm ngược thời gian với UIDatePicker</li>
+          <li>UIImagePickerController</li>
+          <li>Ứng hình ảnh (camera, library) với UIIMagePickerController</li>
+          <li>UIScrollView</li>
+          <li>Show/hide keyboard với ScrollView, slideshows</li>
+        </ul>
+        
+        <div class="break-20"></div>
+        <ul><span class="header header-24-30 txcl-primary">Buổi 5:</span> Controls (tiếp)
+          <li>UITableView, UITableViewCell</li>
+          <li>Register TableViewCell</li>
+          <li>UITableViewDelegate, UITableViewDatasource</li>
+          <li>Ứng dụng quản lý thông tin khách hàng với chức năng thêm, sửa, xoá</li>
+        </ul>
+        
+        <div class="break-20"></div>
+        <ul><span class="header header-24-30 txcl-primary">Buổi 6:</span> Controls (tiếp)
+          <li>UICollectionView, UICollectionViewCell</li>
+          <li>Register CollectionViewCell</li>
+          <li>UICollectionViewFlowLayout</li>
+          <li>UICollectionViewDelegate, UICollectionCollectionDatasource </li>
+          <li>Ứng dụng shop bán hàng</li>
+          <li>Ứng dụng thư viện ảnh</li>
+        </ul>
+        
+        <div class="break-20"></div>
+        <ul><span class="header header-24-30 txcl-primary">Buổi 7:</span> Container Controllers
+          <li>UINavigationController, UITabBarController</li>
+          <li>Điều hướng màn hình</li>
+          <li>Truyền dữ liệu giữa các màn hình</li>
+          <li>Ứng dụng chuyên nghiệp với UINavigationController, UITabBarController</li>
+        </ul>
+        
+        <div class="break-20"></div>
+        <ul><span class="header header-24-30 txcl-primary">Buổi 8:</span> Debug và pattern
+          <li>Debug với Xcode</li>
+          <li>Mô hình MVC, MVVM, Singleton</li>
+          <li>Ứng dụng các mô hình trong thực tế</li>
+        </ul>
+        
+        <div class="break-20"></div>
+        <ul><span class="header header-24-30 txcl-primary">Buổi 9:</span> Nâng cao Gesture Recognizer và sử dụng thư viện
+          <li>Tích hợp thư viện bên thứ 3 sử dụng CocoaPods hoặc Carthage</li>
+          <li>UILongPressGesture</li>
+          <li>UISwipeGesture</li>
+          <li>UIPanGesture</li>
+        </ul>
+        
+        <div class="break-20"></div>
+        <ul><span class="header header-24-30 txcl-primary">Buổi 01:</span> Local database
+          <li>Core Data</li>
+          <li>Realm</li>
+          <li>User Default</li>
+          <li>Key chains</li>
+          <li>Ứng dụng Todo List</li>
+        </ul>
+        
+        <div class="break-20"></div>
+        <ul><span class="header header-24-30 txcl-primary">Buổi 11:</span> Firebase
+          <li>Cài đặt Firebase</li>
+          <li>Authenticate với Firebase</li>
+          <li>Firebase Firestore</li>
+          <li>Firebase Realtime</li>
+          <li>Ứng dụng xem video youtube sử dụng Firebase backend</li>
+        </ul>
+        
+        <div class="break-20"></div>
+        <ul><span class="header header-24-30 txcl-primary">Buổi 12 + 13:</span> Rest API
+          <li>Giới thiẹu cách nhậ dữ liệu từ Backend thông qua API - Resful JSON</li>
+          <li>Test API với Postman</li>
+          <li>URLSession, Alamofire</li>
+          <li>API với các phương thức POST, GET, PUT, DELETE</li>
+          <li>Upload photos</li>
+          <li>Ứng dụng thời tiết</li>
+        </ul>
+        
+        <div class="break-20"></div>
+        <ul><span class="header header-24-30 txcl-primary">Buổi 14:</span> Google maps
+          <li>Tích hợp Google maps vào ứng dụng</li>
+          <li>Lấy location hiện tại</li>
+          <li>Tìm kiếm địa điểm theo lat long</li>
+          <li>Chỉ đường</li>
+        </ul>
+        
+        <div class="break-20"></div>
+        <ul><span class="header header-24-30 txcl-primary">Buổi 15:</span> Quản lý bộ nhớ
+          <li>ARC - cơ chế quản lý bộ nhớ</li>
+          <li>Leak memory</li>
+          <li>Debug bộ nhớ</li>
+        </ul>
+        
+        <div class="break-20"></div>
+        <ul><span class="header header-24-30 txcl-primary">Buổi 16:</span> Grand Center Dispatch
+          <li>GCD - xử lý đa nhiệm trong iOS</li>
+          <li>Serial queue, Concurrent queue</li>
+          <li>Concurrency</li>
+        </ul>
+        
+        <div class="break-20"></div>
+        <ul><span class="header header-24-30 txcl-primary">Buổi 17:</span> Test và deploy sản phẩm
+          <li>UI Tests</li>
+          <li>Unit Tests</li>
+          <li>Deploy sản phẩm lên App Store</li>
+        </ul>
+        
+        <div class="break-20"></div>
+        <ul><span class="header header-24-30 txcl-primary">Buổi 18:</span> Bảo vệ đồ án</ul>
+      </div>
+
+      <div class="break-20"></div>
+      <button type="button" class="collapsible">
+        <span class="header header-24-30">Môn học: Thiết kế giao diện cho Mobile (UI/UX)</span>
+        <span class="iconPlus header header-32-36">+</span>
+        <span class="iconHide header header-32-36">--</span>
+      </button>
+      <div class="listContent">
+        <div class="break-20"></div>
+        <ul><span class="header header-24-30 txcl-primary">Buổi 1:</span> Tìm hiểu khái niệm UI/UX
+          <li>Tại sao developer cần hiểu về UI/UX</li>
+          <li>Các yếu tố cơ bản của UI: Font, color, layout, style</li>
+          <li>Hướng dẫn tạo wireframe</li>
+        </ul>
+
+        <div class="break-20"></div>
+        <ul><span class="header header-24-30 txcl-primary">Buổi 2:</span> Các luật cơ bản của UX (Phần 1)
+          <li>Fitt's law</li>
+          <li>Hick's law</li>
+          <li>Jakob's law</li>
+          <li>Miller's law</li>
+          <li>Bổ sung wireframe dựa theo các quy tắc trên</li>
+        </ul>
+        
+        <div class="break-20"></div>
+        <ul><span class="header header-24-30 txcl-primary">Buổi 3:</span> Các luật cơ bản của UX (Phần 2)
+          <li>Law of common region</li>
+          <li>Law of pragnanz</li>
+          <li>Law of proximity </li>
+          <li>Law of similarity</li>
+          <li>Hoàn thiện wireframe</li>
+          <li>Thực hành vẽ layout trên figma/sketch app/photoshop</li>
+        </ul>
+        
+        <div class="break-20"></div>
+        <ul><span class="header header-24-30 txcl-primary">Buổi 4:</span> Thiết kế ứng dụng di động
+          <li>Trends</li>
+          <li>Workflow</li>
+          <li>Thực hành layout</li>
+        </ul>
+        
+        <div class="break-20"></div>
+        <ul><span class="header header-24-30 txcl-primary">Buổi 5:</span> Lưu ý khi thiết kế
+          <li>Phân tích case study với 7 nguyên tắc (example popup delight score)</li>
+          <li>Chữa bố cục</li>
+          <li>Thực hành layout</li>
+        </ul>
+        
+        <div class="break-20"></div>
+        <ul><span class="header header-24-30 txcl-primary">Buổi 6:</span> Design parttern
+          <li>Style guides</li>
+          <li>Partter libraries</li>
+          <li>Tạo style guides/patter libraries cho đồ án</li>
+        </ul>
+        
+        <div class="break-20"></div>
+        <ul><span class="header header-24-30 txcl-primary">Buổi 7 + 8:</span> Chữa và bảo vệ đồ án</ul>
+      </div>
+    </section>
+
+
+    <!-- Section 4 Giáo Trình -->
+    <section class="container" id="idGiaoTrinh">
+      <div class="break-120"></div>
+
+      <div class="layout1x1">
+        <div class="content">
+          <p class="header header-48-52 txcl-primary">GIÁO TRÌNH</p>
+          <div class="break-12"></div>
+          <div class="decor"></div>
+          <div class="break-12"></div>
+          <p>Học viên được cung cấp tài khoản học trực tuyến vĩnh 
+              viễn: Slides và videos hướng dẫn giúp dễ dàng ôn tập 
+              hệ thống lại kiến thức.</p>
+          <div class="break-40"></div>
+          <div class="btn-responsive">
+            <button class="btn btn-primary header header-20-28 txcl-white">Tải slide bài giảng</button>
+          </div>
+        </div>
+  
+        <div class="imageGiaoTrinh">
+          <picture>
+            <img src="../images/sectionGiaoTrinh/giaoTrinh.png" alt="Video bài giảng">
+          </picture>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Section 5 Điều Kiện Học -->
+    <section class="container" id="idYeuCau">
+      <div class="break-120"></div>
+
+      <div class="layout1x1">
+        <div class="content">
+          <p class="header header-48-52 txcl-primary">ĐIỀU KIỆN HỌC</p>
+          <div class="break-12"></div>
+          <div class="decor"></div>
+          <div class="break-12"></div>
+          <p>Yêu thích lập trình IOS, có laptop cá nhân, có Iphone 
+            hoặc Ipad là một lợi thế.</p>
+  
+          <div class="break-20"></div>
+          <div class="cardYeuCau">
+            <div class="cardIcon">
+              <picture>
+                <source srcset="../images/sectionYeuCau/iconLaptop.webp" type="image/webp">
+                <source srcset="../images/sectionYeuCau/iconLaptop.png" type="image/png">
+                <img src="../images/sectionYeuCau/iconLaptop.png" alt="Macbook">
+              </picture>
+            </div>
+            <div class="cardContent">
+              <p class="header header-24-30 txcl-primary">Macbook</p>
+              <p>RAM từ 8G, sử dụng ổ SSD 128G trở lên</p>
+              <p>Hệ điều hành macOS: macOS 15 Catalina trở lên</p>
+            </div>
+          </div>
+
+          <div class="break-20"></div>
+          <div class="cardYeuCau">
+            <div class="cardIcon">
+              <picture>
+                <source srcset="../images/sectionYeuCau/iconLaptop.webp" type="image/webp">
+                <source srcset="../images/sectionYeuCau/iconLaptop.png" type="image/png">
+                <img src="../images/sectionYeuCau/iconLaptop.png" alt="Laptop (Window)">
+              </picture>
+            </div>
+            <div class="cardContent">
+              <p class="header header-24-30 txcl-primary">Laptop (Window)</p>
+              <p>Cài đặt Hackintosh</p>
+              <p>Tham khảo cài đặt</p>
+              <p>Nguyễn Minh Sơn</p>
+              <a href="tel:(+0)128-706-5634" class="txcl-primary" style="font-weight: 600;">01287065634</a>
+              <a href="https://caidatmacos.com" target="_blank" class="txcl-primary" style="font-weight: 600;">caidatmacos.com</a>
+            </div>
+          </div>
+
+          <div class="break-20"></div>
+          <div class="cardYeuCau">
+            <div class="cardIcon">
+              <picture>
+                <source srcset="../images/sectionYeuCau/iconCode.webp" type="image/webp">
+                <source srcset="../images/sectionYeuCau/iconCode.png" type="image/png">
+                <img src="../images/sectionYeuCau/iconCode.png" alt="Phần mềm">
+              </picture>
+            </div>
+            <div class="cardContent">
+              <p class="header header-24-30 txcl-primary">Phần mềm</p>
+              <p>XCode bản mới nhất</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="imageYeuCau">
+          <picture>
+            <source srcset="../images/sectionYeuCau/yeuCau.webp" type="image/webp">
+            <source srcset="../images/sectionYeuCau/yeuCau.png" type="image/png">
+            <img src="../images/sectionYeuCau/yeuCau.png" alt="">
+          </picture>
+
+          <div class="boxYeuCau">
+            <div class="boxYeuCau2">
+              <div class="boxYeuCauDecor bgcl-primary">
+                <p class="header header-32-36 txcl-white">ĐÓNG TRỌN GÓI</p>
+              </div>
+              <div class="break-20"></div>
+              <p style="text-align: center;"><span class="header header-32-36 txcl-secondary">3.900.000</span> /2 tháng</p>
+              <div class="break-20"></div>
+              <ul class="boxYeuCauContent">
+                <li>Lớp tối đa 12 – 15 học viên</li>
+                <li>Giảng viên có thể cùng code với sinh viên</li>
+                <li>Chấm, chữa bài thường xuyên</li>
+                <li>Sinh viên được cấp chứng chỉ sau khoá học</li>
+              </ul>
+              <div class="break-40"></div>
+              <div style="text-align: center;">
+                <button class="btn btn-primary header header-20-28 txcl-white">Đăng ký ngay</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Background Decor -->
+    <div class="break-120"></div>
+    <div class="bgdecor2"></div>
+
+
+    <!-- Section 6 Feedback Của Học Viên -->
+    <section class="container-fluid bgcl-primary" id="idHocVien">
+      <div class="break-60"></div>
+
+      <div class="container layoutCenter">
+        <p class="header header-48-52 txcl-white">FEEDBACK CỦA HỌC VIÊN</p>
+        <div class="break-12"></div>
+        <div class="decor"></div>
+      </div>
+
+      <div class="break-40"></div>
+
+      <div class="carouselFeedback">
+        <div class="cardFeedback">
+          <picture>
+            <source srcset="../images/sectionFeedback/feedbackBG.webp" type="image/webp">
+            <source srcset="../images/sectionFeedback/feedbackBG.png" type="image/png">
+            <img src="../images/sectionFeedback/feedbackBG.png" alt="">
+          </picture>
+        </div>
+        <div class="cardFeedback">
+          <picture>
+            <source srcset="../images/sectionFeedback/feedbackBG.webp" type="image/webp">
+            <source srcset="../images/sectionFeedback/feedbackBG.png" type="image/png">
+            <img src="../images/sectionFeedback/feedbackBG.png" alt="">
+          </picture>
+        </div>
+        <div class="cardFeedback">
+          <picture>
+            <source srcset="../images/sectionFeedback/feedbackBG.webp" type="image/webp">
+            <source srcset="../images/sectionFeedback/feedbackBG.png" type="image/png">
+            <img src="../images/sectionFeedback/feedbackBG.png" alt="">
+          </picture>
+        </div>
+      </div>
+      
+      <div class="break-60"></div>
+    </section>
+
+
+    <!-- Background Decor -->
+    <div class="bgdecor1"></div>
+
+
+    <!-- Section 7 Liên Hệ -->
+    <section class="container" id="idLienHe">
+      <div class="break-120"></div>
+
+      <div class="layout1x1fix">
+        <div class="content">
+          <p class="header header-48-52 txcl-primary">LIÊN HỆ</p>
+          <div class="break-12"></div>
+          <div class="decor"></div>
+          <div class="break-12"></div>
+          <p>Điền và gửi thông tin cá nhân theo mẫu bên để được 
+             tư vấn miễn phí về khóa học Lập trình IOS hoặc liên hệ 
+             trực tiếp với chúng tôi theo cách sau.</p>
+             
+          <div class="break-40"></div>
+          <div class="cardLienHe">
+            <picture>
+              <source srcset="../images/sectionLienHe/iconLocation.webp" type="image/webp">
+              <source srcset="../images/sectionLienHe/iconLocation.jpg" type="image/jpg">
+              <img src="../images/sectionLienHe/iconLocation.jpg" alt="Địa chỉ">
+            </picture>
+            <div>
+              <p class="header header-24-30 txcl-primary">Địa chỉ</p>
+              <p>Tầng 12A, tòa Viwaseen Tower, số 48, 
+                 Tố Hữu, Lê Văn Lương kéo dài, Hà Nội</p>
+            </div>
+          </div>
+          <div class="break-20"></div>
+          <div class="cardLienHe">
+            <picture>
+              <source srcset="../images/sectionLienHe/iconPhone.webp" type="image/webp">
+              <source srcset="../images/sectionLienHe/iconPhone.jpg" type="image/jpg">
+              <img src="../images/sectionLienHe/iconPhone.jpg" alt="Điện thoại">
+            </picture>
+            <div>
+              <p class="header header-24-30 txcl-primary">Số điện thoại</p>
+              <a href="tel:(+0)963-023-158">0963023185</a>
+            </div>
+          </div>
+          <div class="break-20"></div>
+          <div class="cardLienHe">
+            <picture>
+              <source srcset="../images/sectionLienHe/iconEmail.webp" type="image/webp">
+              <source srcset="../images/sectionLienHe/iconEmail.jpg" type="image/jpg">
+              <img src="../images/sectionLienHe/iconEmail.jpg" alt="Email">
+            </picture>
+            <div>
+              <p class="header header-24-30 txcl-primary">Email</p>
+              <a href="mailto:manpham@techmaster.vn">manpham@techmaster.vn</a>
+            </div>
+          </div>
+        </div>
+  
+        <div class="boxLienHe">
+          <input class="inputText paragraph paragraph-20-28" id="data-name" type="text" placeholder="* Họ và tên">
+          <div class="break-20"></div>
+          <input class="inputText paragraph paragraph-20-28" id="data-phone" type="number" placeholder="* Số điện thoại liên hệ">
+          <div class="break-20"></div>
+          <input class="inputText paragraph paragraph-20-28" id="data-email" type="text" placeholder="* Địa chỉ Email">
+          <div class="break-20"></div>
+          <textarea class="inputText paragraph paragraph-20-28" id="data-message" rows="6" placeholder="Ghi chú"></textarea>
+          <div class="break-40"></div>
+          <div style="text-align: center;">
+            <button class="btn btn-primary header header-20-28 txcl-white">Đăng ký</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Map -->
+    <section class="container-fluid">
+      <div class="break-80"></div>
+
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.858761266771!2d105.79250071541884!3d20.998297994192292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ad5e6a49f693%3A0x13aeab8c73d00e0c!2sTechmaster!5e0!3m2!1svi!2s!4v1607153605280!5m2!1svi!2s" 
+      width="100%" frameborder="0" style="border: 0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </section>
+
+
+    <!-- Section 8 Blog Công Nghệ -->
+    <section class="container-fluid" id="idBaiViet">
+      <div class="break-120"></div>
+
+      <div class="container">
+        <div class="content">
+          <p class="header header-48-52 txcl-primary">BLOG CÔNG NGHỆ</p>
+          <div class="break-12"></div>
+          <div class="decor"></div>
+        </div>
+      </div>
+
+      <div class="carouselBlog">
+        <div class="cardBlog">
+          <img class="cardThumbnail" src="" alt="">
+          <div class="break-20"></div>
+          <div class="cardDate">
+            <picture>
+              <source srcset="../images/sectionBlog/iconDate.webp" type="image/webp">
+              <source srcset="../images/sectionBlog/iconDate.jpg" type="image/jpg">
+              <img src="../images/sectionBlog/iconDate.jpg" alt="Date">
+            </picture>
+            <span class="paragraph-16-24" style="margin-left: 1.2rem;">24 / 06 / 2021</span>
+          </div>
+          <div class="break-20"></div>
+          <div>
+            <p class="header header-24-30 txcl-primary">Đây là tên của bài viết đó</p>
+            <p>Còn đây là nội dung bài viết, giới hạn 
+                độ dài trong 3 dòng nội dung</p>
+          </div>
+        </div>
+
+        <div class="cardBlog">
+          <img class="cardThumbnail" src="" alt="">
+          <div class="break-20"></div>
+          <div class="cardDate">
+            <picture>
+              <source srcset="../images/sectionBlog/iconDate.webp" type="image/webp">
+              <source srcset="../images/sectionBlog/iconDate.jpg" type="image/jpg">
+              <img src="../images/sectionBlog/iconDate.jpg" alt="Date">
+            </picture>
+            <span class="paragraph-16-24" style="margin-left: 1.2rem;">24 / 06 / 2021</span>
+          </div>
+          <div class="break-20"></div>
+          <div>
+            <p class="header header-24-30 txcl-primary">Đây là tên của bài viết đó</p>
+            <p>Còn đây là nội dung bài viết, giới hạn 
+                độ dài trong 3 dòng nội dung</p>
+          </div>
+        </div>
+
+        <div class="cardBlog">
+          <img class="cardThumbnail" src="" alt="">
+          <div class="break-20"></div>
+          <div class="cardDate">
+            <picture>
+              <source srcset="../images/sectionBlog/iconDate.webp" type="image/webp">
+              <source srcset="../images/sectionBlog/iconDate.jpg" type="image/jpg">
+              <img src="../images/sectionBlog/iconDate.jpg" alt="Date">
+            </picture>
+            <span class="paragraph-16-24" style="margin-left: 1.2rem;">24 / 06 / 2021</span>
+          </div>
+          <div class="break-20"></div>
+          <div>
+            <p class="header header-24-30 txcl-primary">Đây là tên của bài viết đó</p>
+            <p>Còn đây là nội dung bài viết, giới hạn 
+                độ dài trong 3 dòng nội dung</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="break-40"></div>
+      <div style="text-align: center;">
+        <button class="btn btn-primary header header-20-28 txcl-white">Xem thêm</button>
+      </div>
+      
+      <div class="break-80"></div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footerNavbarBg">
+      <div class="container grid-container">
+        <div class="grid-item">
+          <p class="header header-24-30 txcl-primary">TECHMASTER VIETNAM</p>
+          <div class="break-12"></div>
+          <p>Cơ sở Tố Hữu: Tầng 12A, tòa nhà Viwaseen Tower, số 48, 
+             Tố Hữu, Lê Văn Lương kéo dài, Hà Nội (Học tại đây)</p>
+          <div class="break-8"></div>
+          <p>Cơ sở Nguyễn Đình Chiểu: 14 ngõ 4, Nguyễn Đình Chiểu, 
+             Quận Hai Bà Trưng, Hà Nội</p>
+        </div>
+
+        <div class="grid-item">
+          <p class="header header-24-30 txcl-primary">TƯ VẤN VỀ CHƯƠNG TRÌNH</p>
+          <div class="break-12"></div>
+          <p>Mọi thông tin cần tư vấn, hỏi đáp về Lộ trình lập trình 
+             IOS cho các học viên. Vui lòng liên hệ</p>
+          <div class="break-12"></div>
+          <div class="boxFooter">
+            <div class="cardAva">
+              <picture>
+                <source srcset="../images/footer/nvMan.webp" type="image/webp">
+                <source srcset="../images/footer/nvMan.jpg" type="image/jpg">
+                <img src="../images/footer/nvMan.jpg" alt="Ms. Phạm Mẫn">
+              </picture>
+            </div>
+            <div>
+              <p class="header header-20-28 txcl-primary">Ms.Phạm Mẫn</p>
+              <a href="tel:(+0)963-023-158">0963023185</a>
+              <a href="mailto:manpham@techmaster.vn">manpham@techmaster.vn</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+  
+    <!-- //////////// //////////// //////////// //////////// //////////// //////////// -->
+    <!-- //////////// //////////// //////// SCRIPT ///////// //////////// //////////// -->
+    <!-- //////////// //////////// //////////// //////////// //////////// //////////// -->
+
+
+    <!-- jQuerry Ajax JS library -->
+    <script src="../lib/jQuerry-Ajax-3.5.1/jquery-3.5.1.js"></script>
+    <!-- Slick JS library -->
+    <script src="../lib/Slick-1.8.1/slick/slick.min.js"></script>
+    <!-- JS Riêng -->
+    <script src="../js/index.js"></script>
+  </body>
+</html>

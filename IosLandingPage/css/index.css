@@ -1,0 +1,503 @@
+/* ------------ ------------ ------------ ------------ */
+/* --Style Guide-- ------------ */
+li
+  {
+    margin-left: 2rem;
+  }
+.layout1x1
+  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+.layout1x1fix
+  {
+    display: flex;
+    justify-content: space-between;
+  }
+.content
+  {
+    width: 48rem;
+  }
+
+
+/* ------------ ------------ ------------ ------------ */
+/* --Background Decor-- ------------ */
+.bgdecor1, .bgdecor2
+  {
+    width: 100%;
+    height: 6.4rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+.bgdecor1
+  {
+    margin-top: -2px;
+    background-image: url(../images/background/backgroundDecor1.jpg);
+  }
+.bgdecor2
+  {
+    margin-bottom: -2px;
+    background-image: url(../images/background/backgroundDecor2.jpg);
+  }
+
+
+/* ------------ ------------ ------------ ------------ */
+/* --Navbar-- ------------ */
+.navbarBg
+  {
+    z-index: 5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 8rem;
+    background: linear-gradient(269.34deg, #66D3FA -4.2%, #286BB2 80.75%);
+    box-shadow: 0px 4px 24px 4px rgba(0, 0, 0, 0.06);
+  }
+.navbar
+  {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+.logo
+  {
+    margin: 1.2rem 0;
+    height: calc(100% - 2.4rem);
+  }
+.logo picture img
+  {
+    height: 100%;
+  }
+.menuItem, .menuItem a
+  {
+    margin-left: 2rem;
+    display: inline-block;
+    color: #FFFFFF;
+    text-transform: uppercase;
+  }
+.menuItem a:hover .menuDecor,
+.menuItem a.active .menuDecor
+  {
+    width: 100%;
+  }
+
+
+/* ------------ ------------ ------------ ------------ */
+/* --Main-- ------------ */
+.mainLandingPage
+  {
+    margin-top: 8rem;
+    height: 66rem;
+  }
+.imageLandingPage
+  {
+    width: 56rem;
+  }
+.imageLandingPage img
+  {
+    width: 100%;
+  }
+
+
+/* ------------ ------------ ------------ ------------ */
+/* --Burger Menu-- ------------ */
+.burger-menu
+  {
+    display: none;
+  }
+
+
+/* ------------ ------------ ------------ ------------ */
+/* --Section 1 Giới Thiệu-- ------------ */
+.imageGioiThieu
+  {
+    margin-right: -20px;
+    width: 58rem;
+    position: relative;
+  }
+.imageGioiThieu img
+  {
+    width: 100%;
+  }
+.boxGioiThieu
+  {
+    position: absolute;
+    padding: 0.6rem;
+    width: calc(32rem - 1.2rem);
+    height: 28rem;
+    bottom: 0;
+    left: 0;
+
+    background: #FFFFFF;
+    box-shadow: 12px 24px 60px 4px #D5F3FE;
+    border-radius: 12px;
+  }
+.boxGioiThieu2
+  {
+    padding: 0 2.4rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 2px solid #D5F3FE;
+    box-sizing: border-box;
+    box-shadow: inset 4px 8px 24px rgba(0, 0, 0, 0.06);
+    border-radius: 12px;
+  }
+
+
+/* ------------ ------------ ------------ ------------ */
+/* --Section 2 Giảng Viên-- ------------ */
+.cardGiangVien
+  {
+    margin: 0 4rem 4rem 0;
+    padding: 2.8rem 2.4rem 4.8rem 2.4rem;
+    width: 48rem;
+    /* height: 50rem; */
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+
+    border: 2px solid #D5F3FE;
+    box-sizing: border-box;
+    box-shadow: 8px 12px 10px 2px rgba(213, 243, 254, 0.44);
+    border-radius: 12px;
+  }
+.cardGiangVien:hover
+  {
+    background: radial-gradient(102.39% 113.6% at 97.61% 1.34%, #4EAADE 0%, #0F5298 100%);
+  }
+.cardGiangVien:hover .txcl-primary,
+.cardGiangVien:hover li::marker,
+.cardGiangVien:hover li
+  {
+    color: #FFFFFF;
+  }
+.cardGiangVien:focus
+  {
+    outline: none;
+  }
+.cardGiangVien .cardAva
+  {
+    width: 10rem;
+    height: 10rem;
+  }
+.cardGiangVien .cardAva img
+  {
+    width: 100%;
+    border-radius: 5rem;
+    object-fit: contain;
+    overflow: hidden;
+  }
+
+
+/* ------------ ------------ ------------ ------------ */
+/* --Slick Carousel Giảng Viên-- ------------ */
+.carouselGiangVien .slick-dots li.slick-active button:before
+  {
+    opacity: 1;
+    color: #0F5298;
+  }
+.carouselGiangVien .slick-dots li button:before
+  {
+    font-size: 1rem;
+    color: #0F5298;
+  }
+.carouselGiangVien .slick-dots
+  {
+    width: 108.4rem; /* Bằng container */
+  }
+
+
+/* ------------ ------------ ------------ ------------ */
+/* --Section 3 Nội Dung-- ------------ */
+.collapsible 
+  {
+    padding: 1.2rem 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    color: #0F5298;
+    cursor: pointer;
+    background-color: #F6F6F6;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+  }
+.iconHide
+  {
+    display: none;
+  }
+.collapsible.active, .collapsible:hover 
+  {
+    background-color: #0F5298;
+    color: #FFFFFF;
+  }
+.collapsible.active .iconPlus
+  {
+    display: none;
+  }
+.collapsible.active .iconHide
+  {
+    display: inline;
+  }
+.listContent 
+  {
+    padding: 0 1.8rem;
+    display: none;
+    overflow: hidden;
+  }
+
+
+/* ------------ ------------ ------------ ------------ */
+/* --Section 4 Giáo Trình-- ------------ */
+.imageGiaoTrinh
+  {
+    margin-right: -40px;
+    width: 58rem;
+  }
+.imageGiaoTrinh img
+  {
+    width: 100%;
+  }
+
+
+/* ------------ ------------ ------------ ------------ */
+/* --Section 5 Điều Kiện Học-- ------------ */
+.cardYeuCau
+  {
+    padding: 2rem 4rem;
+    width: calc(100% - 8rem);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+    box-shadow: 4px 8px 24px 4px rgba(213, 243, 254, 0.65);
+    border-radius: 12px;
+  }
+.cardYeuCau .cardIcon
+  {
+    width: 12rem;
+  }
+.cardYeuCau .cardIcon img
+  {
+    width: 100%;
+  }
+.cardYeuCau .cardContent
+  {
+    width: 24rem;
+  }
+.cardYeuCau .cardContent a:hover
+  {
+    color: #0F5298;
+  }
+.imageYeuCau
+  {
+    margin-right: -20px;
+    width: 56rem;
+    position: relative;
+  }
+.imageYeuCau img
+  {
+    width: 100%;
+  }
+.boxYeuCau
+  {
+    position: absolute;
+    padding: 1rem 0.8rem;
+    width: calc(42rem - 1.6rem);
+    height: 54rem;
+    top: 6px;
+    left: 50px;
+
+    background: #FFFFFF;
+    box-shadow: 12px 24px 60px 4px #D5F3FE;
+    border-radius: 12px;
+  }
+.boxYeuCau2
+  {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #D5F3FE;
+    box-sizing: border-box;
+    box-shadow: inset 4px 8px 24px rgba(0, 0, 0, 0.06);
+    border-radius: 12px;
+  }
+.boxYeuCauDecor
+  {
+    height: 12rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+  }
+.boxYeuCauContent
+  {
+    margin: auto;
+    width: 28rem;
+  }
+
+
+/* ------------ ------------ ------------ ------------ */
+/* --Section 6 Feedback Của Học Viên-- ------------ */
+.layoutCenter
+  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+.layoutCenter .decor
+  {
+    background-color: #FFFFFF;
+  }
+.cardFeedback
+  {
+    margin: 0 4rem 4rem 4rem;
+  }
+.cardFeedback picture img
+  {
+    width: 42rem;
+  }
+.cardFeedback:focus
+  {
+    outline: none;
+  }
+
+/* ------------ ------------ ------------ ------------ */
+/* --Slick Carousel Feedback-- ------------ */
+.carouselFeedback .slick-dots li.slick-active button:before
+  {
+    opacity: 1;
+    color: #FFFFFF;
+  }
+.carouselFeedback .slick-dots li button:before
+  {
+    font-size: 1rem;
+    color: #FFFFFF;
+  }
+
+
+/* ------------ ------------ ------------ ------------ */
+/* --Section 7 Liên Hệ-- ------------ */
+.cardLienHe
+  {
+    padding: 2rem 2rem 2rem 4rem;
+    width: calc(100% - 6rem);
+    display: flex;
+    background-color: #FFFFFF;
+    box-shadow: 4px 8px 24px 4px rgba(213, 243, 254, 0.65);
+    border-radius: 12px;
+  }
+.cardLienHe img
+  {
+    width: 6rem;
+    height: 6rem;
+    margin-right: 2rem;
+  }
+.boxLienHe
+  {
+    padding: 4rem 4rem 6rem 4rem;
+    width: calc(48rem - 8rem);
+    background: #FFFFFF;
+    box-shadow: 12px 24px 60px 4px #D5F3FE;
+    border-radius: 12px;
+  }
+.inputText
+  {
+    padding: 1.8rem 1.4rem;
+    width: calc(100% - 2.8rem - 2px);
+    border: 1px solid #66D3FA;
+    border-radius: 4px;
+  }
+.inputText:focus
+  {
+    outline: none;
+  }
+
+
+/* ------------ ------------ ------------ ------------ */
+/* --Map-- ------------ */
+iframe
+  {
+    height: 48rem;
+  }
+
+
+/* ------------ ------------ ------------ ------------ */
+/* --Section 8 Blog Công Nghệ-- ------------ */
+.cardBlog
+  {
+    margin: 6rem 4rem 4rem 4rem;
+    padding: 0 0 4rem 0;
+    width: 42rem;
+    background: #FFFFFF;
+    box-shadow: 4px 12px 12px 4px rgba(213, 243, 254, 0.82);
+    border-radius: 12px;
+  }
+.cardBlog .cardThumbnail
+  {
+    width: 100%;
+    height: 23.6rem;
+  }
+.cardBlog div
+  {
+    margin: 0 1.6rem;
+  }
+.cardBlog .cardDate
+  {
+    display: flex;
+    align-items: center;
+  }
+
+
+/* ------------ ------------ ------------ ------------ */
+/* --Slick Carousel Blog-- ------------ */
+.carouselBlog .slick-dots li.slick-active button:before
+  {
+    opacity: 1;
+    color: #0F5298;
+  }
+.carouselBlog .slick-dots li button:before
+  {
+    font-size: 1rem;
+    color: #0F5298;
+  }
+  
+
+/* ------------ ------------ ------------ ------------ */
+/* --Footer-- ------------ */
+.footerNavbarBg
+  {
+    padding: 8rem 0 6rem 0;
+    background-color: #F6F6F6;
+  }
+.grid-container
+  {
+    display: grid;
+    grid-gap: 6rem;
+    grid-template-columns: 48rem 48rem;
+  }
+.boxFooter
+  {
+    display: flex;
+  }
+.boxFooter .cardAva
+  {
+    margin-right: 2rem;
+    width: 8rem;
+    height: 8rem;
+  }
+.boxFooter .cardAva picture img
+  {
+    width: 100%;
+    border-radius: 50%;
+  }

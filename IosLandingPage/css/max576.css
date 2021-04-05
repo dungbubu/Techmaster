@@ -1,0 +1,127 @@
+@media (max-width: 576px)
+  {
+    /* ------------ ------------ ------------ ------------ */
+    /* --Style Guide-- ------------ */
+    .layout1x1, .layout1x1fix
+      {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    .content
+      {
+        width: 100%;
+      }
+
+    /* ------------ ------------ ------------ ------------ */
+    /* --Background Decor-- ------------ */
+    .bgdecor1, .bgdecor2
+      {
+        height: 1.8rem;
+      }
+
+    /* ------------ ------------ ------------ ------------ */
+    /* --Main-- ------------ */
+    .imageLandingPage
+      {
+        display: none;
+      }
+
+    /* ------------ ------------ ------------ ------------ */
+    /* --Section 1 Giới Thiệu-- ------------ */
+    .imageGioiThieu
+      {
+        margin: 2rem 0 0 0;
+        width: 100%;
+      }
+    .boxGioiThieu
+      {
+        height: 18rem;
+      }
+    .boxGioiThieu
+      {
+        bottom: -4rem;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+    /* ------------ ------------ ------------ ------------ */
+    /* --Section 2 Giảng Viên-- ------------ */
+    .cardGiangVien
+      {
+        margin: 0 2rem 1.2rem 0;
+        padding: 1.2rem;
+        width: 28rem;
+      }
+    .carouselGiangVien .slick-dots
+      {
+        width: 28rem; /* Bằng container */
+      }
+    .cardGiangVien .cardAva
+      {
+        width: 6rem;
+        height: 6rem;
+      }
+
+    /* ------------ ------------ ------------ ------------ */
+    /* --Section 3 Nội Dung-- ------------ */
+
+    /* ------------ ------------ ------------ ------------ */
+    /* --Section 4 Giáo Trình-- ------------ */
+    .imageGiaoTrinh
+      {
+        margin: 2rem 0;
+        width: 100%;
+      }
+
+    /* ------------ ------------ ------------ ------------ */
+    /* --Section 5 Điều Kiện Học-- ------------ */
+    .imageYeuCau
+      {
+        margin: 2rem 0 6rem 0;
+        width: 100%;
+      }
+    .boxYeuCau
+      {
+        width: calc(100% - 0.4rem);
+        height: 34rem;
+        top: 10px;
+        left: 0px;
+      }
+    .boxYeuCauDecor
+      {
+        height: 6rem;
+        border-radius: 8px;
+      }
+
+    /* ------------ ------------ ------------ ------------ */
+    /* --Section 6 Feedback Của Học Viên-- ------------ */
+    .cardFeedback picture img
+      {
+        width: 26rem;
+      }
+
+    /* ------------ ------------ ------------ ------------ */
+    /* --Section 7 Liên Hệ-- ------------ */
+    .boxLienHe
+      {
+        margin-top: 2rem;
+        padding: 1.2rem;
+        width: calc(100% - 2.4rem);
+      }
+
+    /* ------------ ------------ ------------ ------------ */
+    /* --Map-- ------------ */
+
+    /* ------------ ------------ ------------ ------------ */
+    /* --Section 8 Blog Công Nghệ-- ------------ */
+
+    /* ------------ ------------ ------------ ------------ */
+    /* --Footer-- ------------ */
+    .grid-container
+      {
+        grid-gap: 2rem;
+        grid-template-columns: 100%;
+      }
+  }

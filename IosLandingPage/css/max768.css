@@ -1,0 +1,128 @@
+@media (max-width: 768px)
+  {
+    /* ------------ ------------ ------------ ------------ */
+    /* --Style Guide-- ------------ */
+    .content
+      {
+        width: 28rem;
+      }
+
+    /* ------------ ------------ ------------ ------------ */
+    /* --Background Decor-- ------------ */
+
+    /* ------------ ------------ ------------ ------------ */
+    /* --Main-- ------------ */
+    .imageLandingPage
+      {
+        margin-right: 0px;
+        width: calc(100% - 28rem);
+      }
+
+    /* ------------ ------------ ------------ ------------ */
+    /* --Section 1 Giới Thiệu-- ------------ */
+    .imageGioiThieu
+      {
+        margin-right: 0px;
+        width: calc(100% - 28rem);
+      }
+    .boxGioiThieu
+      {
+        height: 18rem;
+      }
+
+    /* ------------ ------------ ------------ ------------ */
+    /* --Section 2 Giảng Viên-- ------------ */
+    .cardGiangVien
+      {
+        margin: 0 2rem 1.2rem 0;
+        padding: 1.2rem;
+        width: 28rem;
+      }
+    .carouselGiangVien .slick-dots
+      {
+        width: 54rem; /* Bằng container */
+      }
+    .cardGiangVien .cardAva
+      {
+        width: 6rem;
+        height: 6rem;
+      }
+
+    /* ------------ ------------ ------------ ------------ */
+    /* --Section 3 Nội Dung-- ------------ */
+    .listContent 
+      {
+        padding: 0;
+      }
+
+    /* ------------ ------------ ------------ ------------ */
+    /* --Section 4 Giáo Trình-- ------------ */
+    .imageGiaoTrinh
+      {
+        margin-right: 0px;
+        width: calc(100% - 28rem);
+      }
+
+    /* ------------ ------------ ------------ ------------ */
+    /* --Section 5 Điều Kiện Học-- ------------ */
+    .imageYeuCau
+      {
+        margin-right: 0px;
+        width: calc(100% - 28rem);
+      }
+    .boxYeuCau
+      {
+        width: calc(26rem - 0.4rem);
+        height: 34rem;
+        top: 10px;
+        left: 10px;
+      }
+    .boxYeuCauDecor
+      {
+        height: 6rem;
+        border-radius: 8px;
+      }
+
+    /* ------------ ------------ ------------ ------------ */
+    /* --Section 6 Feedback Của Học Viên-- ------------ */
+    .cardFeedback picture img
+      {
+        width: 26rem;
+      }
+
+    /* ------------ ------------ ------------ ------------ */
+    /* --Section 7 Liên Hệ-- ------------ */
+    .boxLienHe
+      {
+        padding: 1.2rem;
+        width: calc(24rem - 2.4rem);
+        height: 32rem;
+      }
+    .inputText
+      {
+        padding: 0.8rem;
+        width: calc(100% - 1.6rem - 2px);
+      }
+    textarea
+      {
+        height: 8rem;
+      }
+
+    /* ------------ ------------ ------------ ------------ */
+    /* --Map-- ------------ */
+    iframe
+      {
+        height: 24rem;
+      }
+
+    /* ------------ ------------ ------------ ------------ */
+    /* --Section 8 Blog Công Nghệ-- ------------ */
+
+    /* ------------ ------------ ------------ ------------ */
+    /* --Footer-- ------------ */
+    .grid-container
+      {
+        grid-gap: 4rem;
+        grid-template-columns: 25rem 25rem;
+      }
+  }

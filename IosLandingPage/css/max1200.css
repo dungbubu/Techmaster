@@ -1,0 +1,158 @@
+@media (max-width: 1200px)
+  {
+    /* ------------ ------------ ------------ ------------ */
+    /* --Style Guide-- ------------ */
+    .content
+      {
+        width: 42rem;
+      }
+
+    /* ------------ ------------ ------------ ------------ */
+    /* --Background Decor-- ------------ */
+    .bgdecor1, .bgdecor2
+      {
+        height: 4.2rem;
+      }
+
+    /* ------------ ------------ ------------ ------------ */
+    /* --Navbar-- ------------ */
+    .navbarBg
+      {
+        height: 6rem;
+      }
+    .menuItem, .menuItem a
+      {
+        margin-left: 1.2rem;
+      }
+
+    /* ------------ ------------ ------------ ------------ */
+    /* --Main-- ------------ */
+    .mainLandingPage
+      {
+        margin-top: 6rem;
+        height: 52rem;
+      }
+    .imageLandingPage
+      {
+        width: 40rem;
+      }
+
+    /* ------------ ------------ ------------ ------------ */
+    /* --Section 1 Giới Thiệu-- ------------ */
+    .imageGioiThieu
+      {
+        margin-top: -60px;
+        width: 44rem;
+      }
+    .boxGioiThieu
+      {
+        padding: 0.2rem;
+        width: calc(30rem - 0.4rem);
+        height: 24rem;
+        bottom: -40px;
+        left: 20px;
+      }
+
+    /* ------------ ------------ ------------ ------------ */
+    /* --Section 2 Giảng Viên-- ------------ */
+    .cardGiangVien
+      {
+        padding: 2.8rem 2.4rem 4rem 2.4rem;
+        width: 38rem;
+      }
+    .carouselGiangVien .slick-dots
+      {
+        width: 84rem; /* Bằng container */
+      }
+
+    /* ------------ ------------ ------------ ------------ */
+    /* --Section 3 Nội Dung-- ------------ */
+
+    /* ------------ ------------ ------------ ------------ */
+    /* --Section 4 Giáo Trình-- ------------ */
+    .imageGiaoTrinh
+      {
+        width: 40rem;
+      }
+
+    /* ------------ ------------ ------------ ------------ */
+    /* --Section 5 Điều Kiện Học-- ------------ */
+    .cardYeuCau
+      {
+        padding: 2rem 2.8rem;
+      }
+    .cardYeuCau .cardIcon
+      {
+        margin-right: 2rem;
+        width: 10rem;
+      }
+    .imageYeuCau
+      {
+        margin-right: -40px;
+        width: 42rem;
+      }
+    .boxYeuCau
+      {
+        padding: 1rem 0.8rem;
+        width: calc(38rem - 1.6rem);
+        height: 42rem;
+        top: 6px;
+        left: 20px;
+      }
+
+    /* ------------ ------------ ------------ ------------ */
+    /* --Section 6 Feedback Của Học Viên-- ------------ */
+    .cardFeedback
+      {
+        margin: 0 2rem 2rem 2rem;
+      }
+    .cardFeedback picture img
+      {
+        width: 38rem;
+      }
+
+    /* ------------ ------------ ------------ ------------ */
+    /* --Section 7 Liên Hệ-- ------------ */
+    .cardLienHe
+      {
+        padding: 1.8rem;
+        width: calc(100% - 3.6rem);
+      }
+    .cardLienHe img
+      {
+        width: 4rem;
+        height: 4rem;
+      }
+    .boxLienHe
+      {
+        padding: 2rem;
+        width: calc(38rem - 4rem);
+      }
+    .inputText
+      {
+        padding: 1.2rem 1rem;
+        width: calc(100% - 2rem - 2px);
+      }
+
+    /* ------------ ------------ ------------ ------------ */
+    /* --Map-- ------------ */
+    iframe
+      {
+        height: 40rem;
+      }
+
+    /* ------------ ------------ ------------ ------------ */
+    /* --Section 8 Blog Công Nghệ-- ------------ */
+
+    /* ------------ ------------ ------------ ------------ */
+    /* --Footer-- ------------ */
+    .footerNavbarBg
+      {
+        padding: 6rem 0 4rem 0;
+      }
+    .grid-container
+      {
+        grid-gap: 4rem;
+        grid-template-columns: 40rem 40rem;
+      }
+  }
