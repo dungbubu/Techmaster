@@ -22,7 +22,17 @@ $('.carouselFeedback, .carouselBlog').slick(
     dots: true,
     arrows: false,
     focusOnSelect: false,
-    variableWidth: true
+    variableWidth: true,
+    asNavFor: '.carouselModal'
+  });
+
+$('.carouselModal').slick(
+  {
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    fade: true,
+    asNavFor: '.carouselFeedback'
   });
 
 
@@ -39,7 +49,7 @@ menuItemActive.forEach(function(element)
       {
         element.classList.add("active");
         
-        var sibling = menuItemActive[0];
+        let sibling = menuItemActive[0];
         while (sibling) 
          {
             if (sibling.nodeType === 1 && sibling !== element) 
@@ -124,15 +134,15 @@ window.addEventListener("scroll",function()
 
   // ------------ ------------ ------------ ------------ ------------ ------------
   // Hàm ẩn hiện collapse 1 ------------ ------------
-  var coll = document.getElementsByClassName("collapsible");
-  var i;
+  let coll = document.getElementsByClassName("collapsible");
+  let i;
 
   for (i = 0; i < coll.length; i++) 
     {
       coll[i].addEventListener("click", function() 
         {
           this.classList.toggle("active");
-          var content = this.nextElementSibling;
+          let content = this.nextElementSibling;
           if (content.style.display === "block") 
             {
               content.style.display = "none";
@@ -147,15 +157,15 @@ window.addEventListener("scroll",function()
 
   // ------------ ------------ ------------ ------------ ------------ ------------
   // Hàm ẩn hiện collapse 2 ------------ ------------
-  var coll2 = document.getElementsByClassName("collapsible2");
-  var i;
+  let coll2 = document.getElementsByClassName("collapsible2");
+  let y;
 
-  for (i = 0; i < coll2.length; i++) 
+  for (y = 0; y < coll2.length; y++) 
     {
-      coll2[i].addEventListener("click", function() 
+      coll2[y].addEventListener("click", function() 
         {
           this.classList.toggle("active");
-          var content = this.nextElementSibling;
+          let content = this.nextElementSibling;
           if (content.style.display === "block") 
             {
               content.style.display = "none";
@@ -166,3 +176,21 @@ window.addEventListener("scroll",function()
             }
         });
     }
+
+
+  // ------------ ------------ ------------ ------------ ------------ ------------
+  // Hàm hiển thị Feedback ------------ ------------
+  document.querySelectorAll(".cardFeedback").forEach(function(element)
+    {
+      element.addEventListener("click", function()
+        {
+          document.querySelector(".modal").classList.add("show");
+          document.querySelector(".carouselModal").classList.add("show");
+        });
+    });
+
+  document.querySelector(".modal").addEventListener("click", function()
+    {
+      this.classList.remove("show");
+      document.querySelector(".carouselModal").classList.remove("show");
+    });
