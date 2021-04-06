@@ -54,16 +54,15 @@ menuItemActive.forEach(function(element)
 
 // ------------ ------------ ------------ ------------ ------------ ------------
 // Hàm add/remove trạng thái Active khi "scroll" qua các vị trí trên trang
-let idOffSet = [document.getElementById("idTrangChu").getBoundingClientRect().top + document.documentElement.scrollTop,
+window.addEventListener("scroll",function()
+  {
+    let idOffSet = [document.getElementById("idTrangChu").getBoundingClientRect().top + document.documentElement.scrollTop,
                 document.getElementById("idGioiThieu").getBoundingClientRect().top + document.documentElement.scrollTop,
                 document.getElementById("idGiangVien").getBoundingClientRect().top + document.documentElement.scrollTop,
                 document.getElementById("idNoiDung").getBoundingClientRect().top + document.documentElement.scrollTop,
                 document.getElementById("idHocVien").getBoundingClientRect().top + document.documentElement.scrollTop,
                 document.getElementById("idLienHe").getBoundingClientRect().top + document.documentElement.scrollTop,
                 document.getElementById("idBaiViet").getBoundingClientRect().top + document.documentElement.scrollTop];
-
-window.addEventListener("scroll",function()
-  {
     let windowViewpoint = window.pageYOffset + 85;
 
     menuItemActive.forEach(function(element)
