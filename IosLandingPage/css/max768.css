@@ -37,6 +37,7 @@
         margin: 0 2rem 1.2rem 0;
         padding: 1.2rem;
         width: 28rem;
+        height: 42rem;
       }
     .carouselGiangVien .slick-dots
       {
@@ -58,6 +59,14 @@
     .listContent 
       {
         padding: 0;
+      }
+    .collapsible, .collapsible2
+      {
+        padding: 1.2rem 1.2rem;
+      }
+    .listContent, .listContent2
+      {
+        padding: 0 0 0 1.2rem;
       }
 
     /* ------------ ------------ ------------ ------------ */

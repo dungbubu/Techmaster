@@ -57,8 +57,9 @@
     /* --Section 2 Giảng Viên-- ------------ */
     .cardGiangVien
       {
-        padding: 2.8rem 2.4rem 4rem 2.4rem;
+        padding: 2.8rem 2.4rem 3.8rem 2.4rem;
         width: 38rem;
+        height: 44rem;
       }
     .carouselGiangVien .slick-dots
       {

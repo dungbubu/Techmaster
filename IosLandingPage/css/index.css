@@ -160,7 +160,7 @@ li
     margin: 0 4rem 4rem 0;
     padding: 2.8rem 2.4rem 4.8rem 2.4rem;
     width: 48rem;
-    /* height: 50rem; */
+    height: 50rem;
     display: flex !important;
     flex-direction: column;
     align-items: center;
@@ -227,13 +227,10 @@ li
   {
     width: 100%;
   }
-.collapsible 
+.collapsible, .collapsible2
   {
     padding: 1.2rem 2rem;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     text-align: left;
     color: #0F5298;
     cursor: pointer;
@@ -242,11 +239,18 @@ li
     border: none;
     outline: none;
   }
+.collapsible
+  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 .iconHide
   {
     display: none;
   }
-.collapsible.active, .collapsible:hover 
+.collapsible.active, .collapsible:hover,
+.collapsible2.active, .collapsible2:hover 
   {
     background-color: #0F5298;
     color: #FFFFFF;
@@ -259,13 +263,12 @@ li
   {
     display: inline;
   }
-.listContent 
+.listContent, .listContent2
   {
-    padding: 0 1.8rem;
+    padding: 0 0 0 2rem;
     display: none;
     overflow: hidden;
   }
-
 
 /* ------------ ------------ ------------ ------------ */
 /* --Section 4 Giáo Trình-- ------------ */
