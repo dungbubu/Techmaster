@@ -296,10 +296,40 @@ li
   {
     margin-right: -40px;
     width: 58rem;
+    position: relative;
+    cursor: pointer;
   }
 .imageGiaoTrinh img
   {
     width: 100%;
+  }
+.imageGiaoTrinh:hover .playButton
+  {
+    display: block;
+  }
+.playButton
+  {
+    display: none;
+    width: 12rem;
+    height: 12rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+.videoGiaoTrinh
+  {
+    display: none;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+.videoGiaoTrinh.show
+  {
+    display: block;
+    position: fixed;
+    z-index: 1;
   }
 
 
@@ -412,9 +442,11 @@ li
   {
     display: none;
     z-index: -1;
-    width: 100%;
-    top: calc(50%);
-    transform: translateY(-50%);
+    width: 50%;
+    padding-top: 8rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
   }
 .carouselModal.show
   {
@@ -425,14 +457,15 @@ li
 .carouselModal img
   {
     margin: auto;
+    width: 90%;
   }
 .slick-prev
   {
-    margin-left: 20%;
+    margin-left: 0;
   }
 .slick-next
   {
-    margin-right: 20%;
+    margin-right: 0;
   }
 
 

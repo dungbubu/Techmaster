@@ -179,6 +179,15 @@ window.addEventListener("scroll",function()
 
 
   // ------------ ------------ ------------ ------------ ------------ ------------
+  // Hàm hiển thị Video ------------ ------------
+  document.querySelector(".playButton").addEventListener("click", function()
+    {
+      document.querySelector(".modal").classList.add("show");
+      document.querySelector(".videoGiaoTrinh").classList.add("show");
+    });
+
+
+  // ------------ ------------ ------------ ------------ ------------ ------------
   // Hàm hiển thị Feedback ------------ ------------
   document.querySelectorAll(".cardFeedback").forEach(function(element)
     {
@@ -189,8 +198,12 @@ window.addEventListener("scroll",function()
         });
     });
 
+
+  // ------------ ------------ ------------ ------------ ------------ ------------
+  // Hàm ẩn Modal và ẩn hình ảnh / video bên trên ------------ ------------
   document.querySelector(".modal").addEventListener("click", function()
     {
       this.classList.remove("show");
+      document.querySelector(".videoGiaoTrinh").classList.remove("show");
       document.querySelector(".carouselModal").classList.remove("show");
     });
