@@ -394,6 +394,7 @@ li
 .cardFeedback
   {
     margin: 0 4rem 4rem 4rem;
+    cursor: pointer;
   }
 .cardFeedback picture img
   {
