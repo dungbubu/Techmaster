@@ -35,6 +35,23 @@
     /* ------------ ------------ ------------ ------------ */
     /* --Section 4 Giáo Trình-- ------------ */
 
+
+    /* ------------ ------------ ------------ ------------ */
+    /* --Section 4 Video-- ------------ */
+    .videoGiaoTrinh
+      {
+        margin: auto;
+        left: 0;
+        right: 0;
+        transform: translateY(0);
+      }
+    .videoGiaoTrinh iframe
+      {
+        width: 100%;
+        height: 18rem;
+      }
+
+
     /* ------------ ------------ ------------ ------------ */
     /* --Section 5 Điều Kiện Học-- ------------ */
     .boxYeuCauContent

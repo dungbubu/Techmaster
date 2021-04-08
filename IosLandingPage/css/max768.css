@@ -76,6 +76,21 @@
         margin-right: 0px;
         width: calc(100% - 28rem);
       }
+    .playButton
+      {
+        width: 8rem;
+        height: 8rem;
+      }
+
+
+    /* ------------ ------------ ------------ ------------ */
+    /* --Section 4 Video-- ------------ */
+    .videoGiaoTrinh iframe
+      {
+        width: 54rem;
+        height: 30.4rem;
+      }
+
 
     /* ------------ ------------ ------------ ------------ */
     /* --Section 5 Điều Kiện Học-- ------------ */

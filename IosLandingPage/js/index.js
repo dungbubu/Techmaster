@@ -184,6 +184,7 @@ window.addEventListener("scroll",function()
     {
       document.querySelector(".modal").classList.add("show");
       document.querySelector(".videoGiaoTrinh").classList.add("show");
+      document.querySelector(".playButton").classList.add("show");
     });
 
 
@@ -205,5 +206,7 @@ window.addEventListener("scroll",function()
     {
       this.classList.remove("show");
       document.querySelector(".videoGiaoTrinh").classList.remove("show");
+      document.querySelector(".playButton").classList.remove("show");
+      // document.getElementById("videoGiaoTrinh").contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');});
       document.querySelector(".carouselModal").classList.remove("show");
     });
