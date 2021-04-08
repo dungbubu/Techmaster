@@ -180,11 +180,11 @@ window.addEventListener("scroll",function()
 
   // ------------ ------------ ------------ ------------ ------------ ------------
   // Hàm hiển thị Video ------------ ------------
-  document.querySelector(".playButton").addEventListener("click", function()
+  document.querySelector(".imageGiaoTrinh").addEventListener("click", function()
     {
       document.querySelector(".modal").classList.add("show");
       document.querySelector(".videoGiaoTrinh").classList.add("show");
-      document.querySelector(".playButton").classList.add("show");
+      document.querySelector(".playButtonActive").classList.add("show");
     });
 
 
@@ -205,8 +205,8 @@ window.addEventListener("scroll",function()
   document.querySelector(".modal").addEventListener("click", function()
     {
       this.classList.remove("show");
-      document.querySelector("#videoGiaoTrinh").contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+      // document.querySelector("#videoGiaoTrinh").stopVideo();
       document.querySelector(".videoGiaoTrinh").classList.remove("show");
-      document.querySelector(".playButton").classList.remove("show");
+      document.querySelector(".playButtonActive").classList.remove("show");
       document.querySelector(".carouselModal").classList.remove("show");
     });

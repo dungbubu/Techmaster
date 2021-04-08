@@ -303,11 +303,24 @@ li
   {
     width: 100%;
   }
-.imageGiaoTrinh:hover .playButton, .playButton.show
+.imageGiaoTrinh:hover .playButtonActive, .playButtonActive.show
   {
     display: block;
   }
+.imageGiaoTrinh:hover .playButton
+  {
+    display: none;
+  }
 .playButton
+  {
+    width: 12rem;
+    height: 12rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+.playButtonActive
   {
     display: none;
     width: 12rem;
