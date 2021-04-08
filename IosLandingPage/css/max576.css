@@ -108,7 +108,7 @@
     .boxYeuCau
       {
         width: calc(100% - 0.4rem);
-        height: 34rem;
+        /* height: 34rem; */
         top: 10px;
         left: 0px;
       }

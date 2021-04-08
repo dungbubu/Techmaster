@@ -385,7 +385,7 @@ li
     position: absolute;
     padding: 1rem 0.8rem;
     width: calc(42rem - 1.6rem);
-    height: 54rem;
+    /* height: 54rem; */
     top: 6px;
     left: 50px;
 
@@ -395,6 +395,7 @@ li
   }
 .boxYeuCau2
   {
+    padding-bottom: 2rem;
     width: 100%;
     height: 100%;
     border: 2px solid #D5F3FE;
@@ -413,7 +414,7 @@ li
 .boxYeuCauContent
   {
     margin: auto;
-    width: 28rem;
+    width: 95%;
   }
 
 

@@ -122,9 +122,13 @@
       {
         padding: 0.2rem;
         width: calc(28rem - 0.4rem);
-        height: 38rem;
+        /* height: 38rem; */
         top: 10px;
         left: 20px;
+      }
+    .boxYeuCau2
+      {
+        padding-bottom: 1.2rem;
       }
     .boxYeuCau2 li
       {

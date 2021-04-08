@@ -109,7 +109,7 @@
       {
         padding: 1rem 0.8rem;
         width: calc(38rem - 1.6rem);
-        height: 42rem;
+        /* height: 42rem; */
         top: 6px;
         left: 20px;
       }
