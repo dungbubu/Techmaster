@@ -21,7 +21,7 @@ $('.carouselFeedback, .carouselBlog').slick(
     slidesToScroll: 1,
     dots: true,
     arrows: false,
-    focusOnSelect: false,
+    focusOnSelect: true,
     variableWidth: true,
     asNavFor: '.carouselModal'
   });
