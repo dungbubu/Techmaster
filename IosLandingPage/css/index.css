@@ -525,7 +525,7 @@ li
   {
     padding: 4rem 4rem 6rem 4rem;
     width: calc(48rem - 8rem);
-    background: #FFFFFF;
+    background-color: #FFFFFF;
     box-shadow: 12px 24px 60px 4px #D5F3FE;
     border-radius: 12px;
   }
@@ -539,6 +539,48 @@ li
 .inputText:focus
   {
     outline: none;
+  }
+
+.errorName, .errorPhone, .errorEmail
+  {
+    display: none;
+    font-weight: bold;
+  }
+.errorName.show, .errorPhone.show, .errorEmail.show
+  {
+    display: block;
+  }
+.errorInputName.show, .errorInputPhone.show, .errorInputEmail.show
+  {
+    border-color: #DC3545;
+  }
+
+
+/* ------------ ------------ ------------ ------------ */
+/* --Section 7 Thông báo-- ------------ */
+.imageThongBao
+  {
+    z-index: 1;
+    display: none;
+    position: fixed;
+    top: 54%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 2rem 4rem 4rem 4rem;
+    margin: auto;
+    width: 40rem;
+    text-align: center;
+    background-color: #FFFFFF;
+    box-shadow: 12px 24px 60px 4px #D5F3FE;
+    border-radius: 12px;
+  }
+.imageThongBao.show
+  {
+    display: block;
+  }
+.imageThongBao img
+  {
+    width: 100%;
   }
 
 

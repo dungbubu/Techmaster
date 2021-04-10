@@ -12,7 +12,7 @@ $('.carouselGiangVien').slick(
     variableWidth: true
   });
 
-$('.carouselFeedback, .carouselBlog').slick(
+$('.carouselBlog').slick(
   {
     infinite: true,
     autoplay: true,
@@ -21,6 +21,16 @@ $('.carouselFeedback, .carouselBlog').slick(
     slidesToScroll: 1,
     dots: true,
     arrows: false,
+    focusOnSelect: true,
+    variableWidth: true
+  });
+
+$('.carouselFeedback').slick(
+  {
+    slidesToScroll: 1,
+    dots: true,
+    arrows: false,
+    centerMode: true,
     focusOnSelect: true,
     variableWidth: true,
     asNavFor: '.carouselModal'
@@ -32,6 +42,9 @@ $('.carouselModal').slick(
     slidesToScroll: 1,
     arrows: true,
     fade: true,
+    centerMode: true,
+    focusOnSelect: true,
+    cssEase: 'linear',
     asNavFor: '.carouselFeedback'
   });
 
@@ -184,6 +197,9 @@ window.addEventListener("scroll",function()
     {
       document.querySelector(".modal").classList.add("show");
       document.querySelector(".videoGiaoTrinh").classList.add("show");
+      document.querySelector("#videoGiaoTrinh").contentWindow.postMessage(
+        '{"event":"command","func":"' + "playVideo" + '","args":""}', "*");
+      // Ấn vào Play button là video chạy luôn
       document.querySelector(".playButtonActive").classList.add("show");
     });
 
@@ -205,8 +221,97 @@ window.addEventListener("scroll",function()
   document.querySelector(".modal").addEventListener("click", function()
     {
       this.classList.remove("show");
-      // document.querySelector("#videoGiaoTrinh").stopVideo();
+      document.querySelector("#videoGiaoTrinh").contentWindow.postMessage(
+      '{"event":"command","func":"' + "pauseVideo" + '","args":""}', "*");
+      // Ấn ra ngoài nền thì video phải dừng lại
       document.querySelector(".videoGiaoTrinh").classList.remove("show");
       document.querySelector(".playButtonActive").classList.remove("show");
       document.querySelector(".carouselModal").classList.remove("show");
     });
+
+
+  // ------------ ------------ ------------ ------------ ------------ ------------
+  // Đẩy Content vào mục Blog ------------ ------------
+  $.ajax({
+    url: "https://techmaster.vn/v1/posts?category=447&limit=8",
+    method: "GET",
+    success: (data) => {
+      let posts = $(".cardBlog");
+      for (let i = 0; i < data.length; i++) {
+        $($(".cardThumbnail")[i]).attr("src", data[i].Thumbnail);
+        $($(".cardBlog .header")[i]).text(data[i].Title);
+        $($(".cardBlog .blog-description")[i]).text(data[i].Description);
+        $($(".cardDate span")[i]).text(data[i].PublishedAt);
+      }
+    },
+  });
+
+
+  // ------------ ------------ ------------ ------------ ------------ ------------
+  // Validate user input trong form đăng ký thông tin liên hệ ------------ ------------
+  function hideError() {
+    document.querySelector(".errorName").classList.remove("show");
+    document.querySelector(".errorInputName").classList.remove("show");
+    document.querySelector(".errorPhone").classList.remove("show");
+    document.querySelector(".errorInputPhone").classList.remove("show");
+    document.querySelector(".errorEmail").classList.remove("show");
+    document.querySelector(".errorInputEmail").classList.remove("show");
+  }
+
+
+  // ------------ ------------ ------------ ------------ ------------ ------------
+  // Validate user input trong form đăng ký thông tin liên hệ ------------ ------------
+  $(".boxLienHe button").click(() => {
+    const wrongNamePattern = /[!@#$%^&*\(\)\-\_\+={}\[\];:'"\/\\\.,<>`~?\d]/g;
+    const phonePattern = /(\+84[3|5|7|8|9]|0[3|5|7|8|9])+([0-9]{8})\b/g;
+    const emailPattern = /^\S+@\S+\.\S+$/g;
+
+    let inputName = $("#data-name").val();
+    let inputPhone = $("#data-phone").val();
+    let inputEmail = $("#data-email").val();
+    let inputMessage = $("#data-message").val();
+
+    if (inputName.match(wrongNamePattern) || inputName == "") 
+      {
+        document.querySelector(".errorName").classList.add("show");
+        document.querySelector(".errorInputName").classList.add("show");
+      } 
+    if (!phonePattern.test(inputPhone.replaceAll(" ", ""))) 
+      {
+        document.querySelector(".errorPhone").classList.add("show");
+        document.querySelector(".errorInputPhone").classList.add("show");
+      } 
+    if (!emailPattern.test(inputEmail)) 
+      {
+        document.querySelector(".errorEmail").classList.add("show");
+        document.querySelector(".errorInputEmail").classList.add("show");
+      } 
+    else 
+      {
+        hideError();
+        $.ajax({
+          url: "https://techmaster.vn/submit-advisory",
+          method: "POST",
+          contentType: "application/json",
+          data: JSON.stringify({
+            FullName: inputName,
+            Email: inputEmail,
+            Phone: inputPhone,
+            Info: inputMessage,
+            Link: window.location.href,
+            ItemId: "bpv",
+            Type: 3
+          })
+        }).done(() => {
+          $(".imageThongBao").toggleClass("show");
+          $(".modal").toggleClass("show");
+
+          setTimeout(() => {
+            $(".imageThongBao").toggleClass("show");
+            $(".modal").toggleClass("show");
+          }, 6000);
+
+          $(".boxLienHe .inputText").val("");
+        });
+      }
+  });

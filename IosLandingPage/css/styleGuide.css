@@ -168,7 +168,11 @@ input[type=number]
   }
 .txcl-white
   {
-      color: #FFFFFF;
+    color: #FFFFFF;
+  }
+.txcl-warning
+  {
+    color: #DC3545;
   }
 
 
