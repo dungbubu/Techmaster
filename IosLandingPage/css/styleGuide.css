@@ -52,12 +52,14 @@ input[type=number]
 @font-face
   {
     font-family: Montserrat;
+    font-display: swap;
     src: url(../fonts/Montserrat/Montserrat-Bold.ttf);
     font-weight: 600;
   }
 @font-face
   {
     font-family: Segoe UI;
+    font-display: swap;
     src: url(../fonts/SegoeUi/segoeuil.ttf);
     font-weight: 400;
   }
